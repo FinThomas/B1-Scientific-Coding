@@ -114,6 +114,10 @@ class ClosedLoop:
             print(actions[t])
             print(disturbances[t])
             self.plant.transition(actions[t], disturbances[t])
+        print('actions')
+        print(actions)
+        print('disturbances')
+        print(disturbances)
             
 
         return Trajectory(positions)
