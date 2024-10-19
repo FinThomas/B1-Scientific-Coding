@@ -90,7 +90,6 @@ class ClosedLoop:
     def __init__(self, plant: Submarine, controller):
         self.plant = plant
         self.controller = controller
-        print(controller)
 
     def simulate(self,  mission: Mission, disturbances: np.ndarray) -> Trajectory:
 
